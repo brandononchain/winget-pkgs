@@ -1,0 +1,27 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Lobstack.Lobstack
+PackageVersion: 0.11.20
+InstallerType: nullsoft
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /S
+  SilentWithProgress: /S
+UpgradeBehavior: install
+ProductCode: Lobstack
+AppsAndFeaturesEntries:
+- DisplayName: Lobstack
+  Publisher: Lobstack
+  ProductCode: Lobstack
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.lobstack.ai/api/download/app?platform=windows&version=0.11.20&asset=Lobstack_0.11.20_x64-setup.exe&utm_source=winget
+  InstallerSha256: 56DAB4D0806FE8EC74E2F52824C14BF3661F56FDD996BE43C1C828EE469CEF23
+ManifestType: installer
+ManifestVersion: 1.10.0
+ReleaseDate: 2026-10-24
